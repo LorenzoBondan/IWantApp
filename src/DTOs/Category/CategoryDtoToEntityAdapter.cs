@@ -1,7 +1,7 @@
 ﻿using IWantApp.DTOs.Category;
 using IWantApp.Models;
 
-public class CategoryEntityToDtoAdapter : BaseConverter<Category, CategoryDTO>
+public class CategoryDtoToEntityAdapter : BaseConverter<Category, CategoryDTO>
 {
     public CategoryDTO ToDto(Category entity)
     {

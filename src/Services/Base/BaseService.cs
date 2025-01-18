@@ -3,6 +3,7 @@
 using IWantApp.DTOs.Base;
 using IWantApp.Models.Base;
 using IWantApp.Repositories.Base;
+using IWantApp.Services.Exceptions;
 using System.Linq.Expressions;
 
 public class BaseService<T, Dto> : IBaseService<T, Dto> where T : BaseEntity where Dto : BaseDTO
@@ -30,7 +31,11 @@ public class BaseService<T, Dto> : IBaseService<T, Dto> where T : BaseEntity whe
     public async Task<Dto?> FindById(int id)
     {
         var entity = await _repository.FindById(id);
-        return entity == null ? null : _converter.ToDto(entity);
+        if (entity == null)
+        {
+            throw new ResourceNotFoundException($"Recurso com ID {id} não encontrado.");
+        }
+        return _converter.ToDto(entity);
     }
 
     public async Task<Dto> Create(Dto dto)
@@ -40,12 +45,22 @@ public class BaseService<T, Dto> : IBaseService<T, Dto> where T : BaseEntity whe
 
     public async Task<Dto?> Update(Dto dto)
     {
+        if (!await ExistsById(dto.Id))
+        {
+            throw new ResourceNotFoundException($"Recurso com ID {dto.Id} não encontrado para atualização.");
+        }
+
         var updatedEntity = await _repository.Update(_converter.ToEntity(dto));
         return updatedEntity == null ? null : _converter.ToDto(updatedEntity);
     }
 
     public async Task Delete(int id)
     {
+        if (!await ExistsById(id))
+        {
+            throw new ResourceNotFoundException($"Recurso com ID {id} não encontrado para exclusão.");
+        }
+
         await _repository.Delete(id);
     }
 

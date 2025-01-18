@@ -4,7 +4,7 @@ using IWantApp.Models;
 
 public class ProductDtoToEntityAdapter : BaseConverter<Product, ProductDTO>
 {
-    private readonly CategoryEntityToDtoAdapter categoryEntityToDtoAdapter;
+    private readonly CategoryDtoToEntityAdapter categoryEntityToDtoAdapter;
 
     public ProductDTO ToDto(Product entity)
     {
