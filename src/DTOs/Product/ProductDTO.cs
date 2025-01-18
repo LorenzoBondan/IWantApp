@@ -1,10 +1,10 @@
-﻿using IWantApp.DTOs.Category;
+﻿using IWantApp.DTOs.Base;
+using IWantApp.DTOs.Category;
 
 namespace IWantApp.DTOs.Product;
 
-public class ProductDTO
+public class ProductDTO : BaseDTO
 {
-    public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public CategoryDTO CategoryDTO { get; set; }
