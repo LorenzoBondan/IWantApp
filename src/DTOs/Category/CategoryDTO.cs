@@ -1,7 +1,8 @@
-﻿namespace IWantApp.DTOs.Category;
+﻿using IWantApp.DTOs.Base;
 
-public class CategoryDTO
+namespace IWantApp.DTOs.Category;
+
+public class CategoryDTO : BaseDTO
 {
-    public int Id { get; set; }
     public string Name { get; set; }
 }

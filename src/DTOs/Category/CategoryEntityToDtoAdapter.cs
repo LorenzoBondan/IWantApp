@@ -1,5 +1,4 @@
-﻿using IWantApp.DTOs;
-using IWantApp.DTOs.Category;
+﻿using IWantApp.DTOs.Category;
 using IWantApp.Models;
 
 public class CategoryEntityToDtoAdapter : BaseConverter<Category, CategoryDTO>

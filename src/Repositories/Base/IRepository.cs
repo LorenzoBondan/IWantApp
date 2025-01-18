@@ -8,8 +8,8 @@ public interface IRepository<T> where T : BaseEntity
     IQueryable<T> FindAll();
     Task<List<T>> FindWithPagedSearch(string query);
     Task<T?> FindById(int id);
-    Task<T> Create(T item);
-    Task<T?> Update(T item);
+    Task<T> Create(T obj);
+    Task<T?> Update(T obj);
     Task Delete(int id);
     Task<bool> ExistsById(int id);
     Task<int> GetCount(Expression<Func<T, bool>> predicate);

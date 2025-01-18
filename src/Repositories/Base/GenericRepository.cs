@@ -31,19 +31,19 @@ public class GenericRepository<T> : IRepository<T> where T : BaseEntity
         return await _dbSet.AsNoTracking().FirstOrDefaultAsync(p => p.Id == id);
     }
 
-    public async Task<T> Create(T item)
+    public async Task<T> Create(T obj)
     {
-        await _dbSet.AddAsync(item);
+        await _dbSet.AddAsync(obj);
         await SaveChangesAsync();
-        return item;
+        return obj;
     }
 
-    public async Task<T?> Update(T item)
+    public async Task<T?> Update(T obj)
     {
-        var existingItem = await _dbSet.FirstOrDefaultAsync(p => p.Id == item.Id);
+        var existingItem = await _dbSet.FirstOrDefaultAsync(p => p.Id == obj.Id);
         if (existingItem == null) return null;
 
-        _context.Entry(existingItem).CurrentValues.SetValues(item);
+        _context.Entry(existingItem).CurrentValues.SetValues(obj);
         await SaveChangesAsync();
         return existingItem;
     }
