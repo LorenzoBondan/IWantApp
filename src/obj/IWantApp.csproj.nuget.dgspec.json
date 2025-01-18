@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\IWantApp\\IWantApp.csproj": {}
+    "C:\\projects\\IWantApp\\src\\IWantApp.csproj": {}
   },
   "projects": {
-    "C:\\projects\\IWantApp\\IWantApp.csproj": {
+    "C:\\projects\\IWantApp\\src\\IWantApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\IWantApp\\IWantApp.csproj",
+        "projectUniqueName": "C:\\projects\\IWantApp\\src\\IWantApp.csproj",
         "projectName": "IWantApp",
-        "projectPath": "C:\\projects\\IWantApp\\IWantApp.csproj",
+        "projectPath": "C:\\projects\\IWantApp\\src\\IWantApp.csproj",
         "packagesPath": "C:\\Users\\lorenzobondan\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\IWantApp\\obj\\",
+        "outputPath": "C:\\projects\\IWantApp\\src\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,20 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
