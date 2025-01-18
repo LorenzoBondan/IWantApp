@@ -43,7 +43,7 @@ public class ApiExceptionFilter : IExceptionFilter
         }
         else
         {
-            context.Result = BuildErrorResponse(HttpStatusCode.InternalServerError, "Erro interno do servidor", requestPath);
+            context.Result = BuildErrorResponse(HttpStatusCode.InternalServerError, "Erro interno do servidor: " + exception.Message, requestPath);
         }
 
         context.ExceptionHandled = true;

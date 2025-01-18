@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\config\\transactionalattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:config\\transactionalattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\services\\category\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:services\\category\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,11 +42,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T19:37:59.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TransactionalAttribute.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Config\\TransactionalAttribute.cs",
+              "RelativeDocumentMoniker": "Config\\TransactionalAttribute.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Config\\TransactionalAttribute.cs",
+              "RelativeToolTip": "Config\\TransactionalAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T19:43:59.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T19:38:41.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Repositories\\Base\\GenericRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Base\\GenericRepository.cs",
@@ -47,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "BaseService.cs",
               "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Services\\Base\\BaseService.cs",
               "RelativeDocumentMoniker": "Services\\Base\\BaseService.cs",
@@ -60,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Services\\Category\\ICategoryService.cs",
               "RelativeDocumentMoniker": "Services\\Category\\ICategoryService.cs",
@@ -73,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Services\\Category\\CategoryService.cs",
               "RelativeDocumentMoniker": "Services\\Category\\CategoryService.cs",
@@ -90,9 +141,9 @@
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCgAAAAzAAAAAAAAAA==",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Controllers\\CategoryController.cs*",
+              "RelativeToolTip": "Controllers\\CategoryController.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwCYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-18T17:52:12.638Z",
               "EditorCaption": ""

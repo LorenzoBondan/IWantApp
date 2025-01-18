@@ -1,4 +1,5 @@
-﻿using IWantApp.DTOs.Category;
+﻿using IWantApp.Config;
+using IWantApp.DTOs.Category;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IWantApp.Controllers;
@@ -27,6 +28,7 @@ public class CategoryController : ControllerBase
         return dto != null ? Ok(dto) : NotFound(); 
     }
 
+    [ServiceFilter(typeof(TransactionalAttribute))]
     [HttpPost]
     public async Task<ActionResult<CategoryDTO>> Create([FromBody] CategoryDTO dto)
     {
