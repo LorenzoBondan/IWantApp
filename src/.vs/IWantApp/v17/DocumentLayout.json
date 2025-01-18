@@ -1,14 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\projects\\IWantApp\\",
+  "WorkspaceRootPath": "C:\\projects\\IWantApp\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\dtos\\product\\productdtotoentityadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:dtos\\product\\productdtotoentityadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\dtos\\category\\categoryentitytodtoadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:dtos\\category\\categoryentitytodtoadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\dtos\\baseconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:dtos\\baseconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\dtos\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:dtos\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\dtos\\category\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:dtos\\category\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\repositories\\product\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:repositories\\product\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\repositories\\product\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:repositories\\product\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\repositories\\category\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:repositories\\category\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\repositories\\category\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:repositories\\category\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\repositories\\base\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:repositories\\base\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\repositories\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:repositories\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\infra\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:infra\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\models\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:models\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\iwantapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:iwantapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +87,235 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T13:58:36.336Z",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-18T16:51:17.763Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IWantApp",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\IWantApp.csproj",
-              "RelativeDocumentMoniker": "IWantApp.csproj",
-              "ToolTip": "C:\\projects\\IWantApp\\IWantApp.csproj",
-              "RelativeToolTip": "IWantApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-18T13:58:26.527Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-18T16:51:09.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductDtoToEntityAdapter.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\DTOs\\Product\\ProductDtoToEntityAdapter.cs",
+              "RelativeDocumentMoniker": "DTOs\\Product\\ProductDtoToEntityAdapter.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\DTOs\\Product\\ProductDtoToEntityAdapter.cs",
+              "RelativeToolTip": "DTOs\\Product\\ProductDtoToEntityAdapter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:48:25.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryEntityToDtoAdapter.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\DTOs\\Category\\CategoryEntityToDtoAdapter.cs",
+              "RelativeDocumentMoniker": "DTOs\\Category\\CategoryEntityToDtoAdapter.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\DTOs\\Category\\CategoryEntityToDtoAdapter.cs",
+              "RelativeToolTip": "DTOs\\Category\\CategoryEntityToDtoAdapter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:45:54.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseConverter.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\DTOs\\BaseConverter.cs",
+              "RelativeDocumentMoniker": "DTOs\\BaseConverter.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\DTOs\\BaseConverter.cs",
+              "RelativeToolTip": "DTOs\\BaseConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:44:20.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryDTO.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\DTOs\\Category\\CategoryDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\Category\\CategoryDTO.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\DTOs\\Category\\CategoryDTO.cs",
+              "RelativeToolTip": "DTOs\\Category\\CategoryDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:43:44.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\DTOs\\Product\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\Product\\ProductDTO.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\DTOs\\Product\\ProductDTO.cs",
+              "RelativeToolTip": "DTOs\\Product\\ProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:42:46.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Repositories\\Category\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Category\\CategoryRepository.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Repositories\\Category\\CategoryRepository.cs",
+              "RelativeToolTip": "Repositories\\Category\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:34:10.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Repositories\\Category\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Category\\ICategoryRepository.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Repositories\\Category\\ICategoryRepository.cs",
+              "RelativeToolTip": "Repositories\\Category\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:31:54.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Repositories\\Product\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Product\\ProductRepository.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Repositories\\Product\\ProductRepository.cs",
+              "RelativeToolTip": "Repositories\\Product\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:27:42.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Repositories\\Product\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Product\\IProductRepository.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Repositories\\Product\\IProductRepository.cs",
+              "RelativeToolTip": "Repositories\\Product\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:26:33.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Repositories\\Base\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Base\\GenericRepository.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Repositories\\Base\\GenericRepository.cs",
+              "RelativeToolTip": "Repositories\\Base\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:37:30.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Repositories\\Base\\IRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Base\\IRepository.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Repositories\\Base\\IRepository.cs",
+              "RelativeToolTip": "Repositories\\Base\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:36:34.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Infra\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Infra\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Infra\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Infra\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:16:11.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Models\\Base\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Models\\Base\\BaseEntity.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Models\\Base\\BaseEntity.cs",
+              "RelativeToolTip": "Models\\Base\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:10:49.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:07:51.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:03:08.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T13:58:36.336Z",
               "EditorCaption": ""
             }
           ]
