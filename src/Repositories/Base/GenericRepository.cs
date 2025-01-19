@@ -1,5 +1,6 @@
 ﻿using IWantApp.Models.Base;
 using IWantApp.Models.Context;
+using IWantApp.Services.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -68,8 +69,15 @@ public class GenericRepository<T> : IRepository<T> where T : BaseEntity
         var item = await _dbSet.FirstOrDefaultAsync(p => p.Id == id);
         if (item != null)
         {
-            _dbSet.Remove(item);
-            await SaveChangesAsync();
+            try
+            {
+                _dbSet.Remove(item);
+                await SaveChangesAsync();
+
+            } catch (DbUpdateException e)
+            {
+                throw new DatabaseException("Existem dependências vinculadas a este objeto.");
+            }
         }
     }
 
