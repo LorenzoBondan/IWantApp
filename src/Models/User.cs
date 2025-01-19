@@ -7,6 +7,6 @@ public class User : IdentityUser<int>
     public string FullName { get; set; }
     public string Address { get; set; }
 
-    public virtual ICollection<UserRole> UserRoles { get; set; }
+    public ICollection<IdentityUserRole<int>> UserRoles { get; set; } = new List<IdentityUserRole<int>>();
 }
 

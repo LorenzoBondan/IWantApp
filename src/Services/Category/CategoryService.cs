@@ -14,7 +14,7 @@ public class CategoryService : BaseService<Category, CategoryDTO>, ICategoryServ
 
     public async Task<List<CategoryDTO>> GetByName(string name)
     {
-        var Categorys = _CategoryRepository.GetByName(name);
-        return Categorys.Select(p => _converter.ToDto(p)).ToList();
+        var Categories = _CategoryRepository.GetByName(name);
+        return Categories.Select(p => _converter.ToDto(p)).ToList();
     }
 }

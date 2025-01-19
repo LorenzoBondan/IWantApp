@@ -5,6 +5,7 @@ using IWantApp.DTOs.Product;
 using IWantApp.Models;
 using IWantApp.Models.Context;
 using IWantApp.Services.Auth;
+using IWantApp.Services.Role;
 using IWantApp.Utils;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -57,6 +58,12 @@ builder.Services.AddScoped<IProductService, ProductService>();
 
 builder.Services.AddScoped<CategoryDtoToEntityAdapter>();
 builder.Services.AddScoped<ProductDtoToEntityAdapter>();
+builder.Services.AddScoped<RoleDtoToEntityAdapter>();
+builder.Services.AddScoped<UserDtoToEntityAdapter>();
+
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 builder.Services.AddScoped<CustomUserUtil>();
 builder.Services.AddScoped<IAuthService, AuthService>();

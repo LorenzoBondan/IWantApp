@@ -20,8 +20,23 @@ public class ApplicationDbContext : IdentityDbContext<User, Role, int>
     {
         base.OnModelCreating(builder);
 
-        builder.Entity<IdentityUserRole<string>>()
-        .HasKey(ur => new { ur.UserId, ur.RoleId }); // Definir chave primária composta
+        // Configuração do relacionamento UserRole
+        builder.Entity<IdentityUserRole<int>>(userRole =>
+        {
+            userRole.HasKey(ur => new { ur.UserId, ur.RoleId }); // Chave primária composta
+
+            // Relacionamento User -> UserRole
+            userRole.HasOne<User>()
+                .WithMany(u => u.UserRoles)
+                .HasForeignKey(ur => ur.UserId)
+                .IsRequired();
+
+            // Relacionamento Role -> UserRole
+            userRole.HasOne<Role>()
+                .WithMany(r => r.UserRoles)
+                .HasForeignKey(ur => ur.RoleId)
+                .IsRequired();
+        });
 
         // Relacionamentos
         builder.Entity<Product>()
