@@ -17,9 +17,10 @@ public class BaseService<T, Dto> : IBaseService<T, Dto> where T : BaseEntity whe
         _converter = converter;
     }
 
-    public IQueryable<Dto> FindAll()
+    public IQueryable<Dto> FindAll(params Expression<Func<T, object>>[] includeProperties)
     {
-        return _repository.FindAll().Select(t => _converter.ToDto(t));
+        var entities = _repository.FindAll(includeProperties);
+        return entities.Select(t => _converter.ToDto(t));
     }
 
     public async Task<List<Dto>> FindWithPagedSearch(string query)
@@ -28,9 +29,9 @@ public class BaseService<T, Dto> : IBaseService<T, Dto> where T : BaseEntity whe
         return entities.Select(_converter.ToDto).ToList();
     }
 
-    public async Task<Dto?> FindById(int id)
+    public async Task<Dto?> FindById(int id, Expression<Func<T, object>> includeProperty)
     {
-        var entity = await _repository.FindById(id);
+        var entity = await _repository.FindById(id, includeProperty);
         if (entity == null)
         {
             throw new ResourceNotFoundException($"Recurso com ID {id} não encontrado.");

@@ -8,5 +8,11 @@ public class Product : BaseEntity
     public string Description { get; set; }
     public Category Category { get; set; }
     public int CategoryId { get; set; }
-    public bool HasStock { get; set; }
+
+    public Product() { }
+
+    public Product(int id)
+    {
+        Id = id;
+    }
 }

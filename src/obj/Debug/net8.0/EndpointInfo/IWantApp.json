@@ -353,6 +353,10 @@
         "additionalProperties": false
       },
       "ProductDTO": {
+        "required": [
+          "category",
+          "name"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -360,14 +364,17 @@
             "format": "int32"
           },
           "name": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
           },
           "description": {
+            "maxLength": 200,
+            "minLength": 0,
             "type": "string",
             "nullable": true
           },
-          "categoryDTO": {
+          "category": {
             "$ref": "#/components/schemas/CategoryDTO"
           }
         },

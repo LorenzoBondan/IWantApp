@@ -24,7 +24,7 @@ public class CategoryController : ControllerBase
     [HttpGet("{id}")]
     public async Task<ActionResult<CategoryDTO>> GetById([FromRoute] int id)
     {
-        var dto = await service.FindById(id);
+        var dto = await service.FindById(id, null);
         return dto != null ? Ok(dto) : NotFound(); 
     }
 
@@ -36,6 +36,7 @@ public class CategoryController : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = createdObj.Id }, createdObj);
     }
 
+    [ServiceFilter(typeof(TransactionalAttribute))]
     [HttpPut]
     public async Task<ActionResult<CategoryDTO>> Update([FromBody] CategoryDTO dto)
     {
@@ -43,6 +44,7 @@ public class CategoryController : ControllerBase
         return updatedObj != null ? Ok(updatedObj) : NotFound();
     }
 
+    [ServiceFilter(typeof(TransactionalAttribute))]
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete([FromRoute] int id)
     {

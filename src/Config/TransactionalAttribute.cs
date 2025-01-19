@@ -1,6 +1,6 @@
 ﻿namespace IWantApp.Config;
 
-using IWantApp.Infra.Data;
+using IWantApp.Models.Context;
 using Microsoft.AspNetCore.Mvc.Filters;
 
 public class TransactionalAttribute : ActionFilterAttribute

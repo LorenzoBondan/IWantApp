@@ -1,4 +1,5 @@
-﻿using IWantApp.DTOs.Product;
+﻿using IWantApp.Config;
+using IWantApp.DTOs.Product;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IWantApp.Controllers;
@@ -17,16 +18,17 @@ public class ProductController : ControllerBase
     [HttpGet]
     public IActionResult GetAll()
     {
-        return Ok(service.FindAll());
+        return Ok(service.FindAllWithCategory());
     }
 
     [HttpGet("{id}")]
     public async Task<ActionResult<ProductDTO>> GetById([FromRoute] int id)
     {
-        var dto = await service.FindById(id);
+        var dto = await service.FindByIdWithCategory(id);
         return dto != null ? Ok(dto) : NotFound();
     }
 
+    [ServiceFilter(typeof(TransactionalAttribute))]
     [HttpPost]
     public async Task<ActionResult<ProductDTO>> Create([FromBody] ProductDTO dto)
     {
@@ -34,6 +36,7 @@ public class ProductController : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = createdObj.Id }, createdObj);
     }
 
+    [ServiceFilter(typeof(TransactionalAttribute))]
     [HttpPut]
     public async Task<ActionResult<ProductDTO>> Update([FromBody] ProductDTO dto)
     {
@@ -41,6 +44,7 @@ public class ProductController : ControllerBase
         return updatedObj != null ? Ok(updatedObj) : NotFound();
     }
 
+    [ServiceFilter(typeof(TransactionalAttribute))]
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete([FromRoute] int id)
     {

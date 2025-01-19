@@ -1,5 +1,5 @@
-﻿using IWantApp.Infra.Data;
-using IWantApp.Models.Base;
+﻿using IWantApp.Models.Base;
+using IWantApp.Models.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -16,9 +16,17 @@ public class GenericRepository<T> : IRepository<T> where T : BaseEntity
         _dbSet = _context.Set<T>();
     }
 
-    public IQueryable<T> FindAll()
+    public IQueryable<T> FindAll(params Expression<Func<T, object>>[] includeProperties)
     {
-        return _dbSet.AsNoTracking();
+        IQueryable<T> query = _dbSet.AsNoTracking();
+
+        // Para cada propriedade incluída, aplica o Include
+        foreach (var includeProperty in includeProperties)
+        {
+            query = query.Include(includeProperty);
+        }
+
+        return query;
     }
 
     public async Task<List<T>> FindWithPagedSearch(string query)
@@ -26,9 +34,16 @@ public class GenericRepository<T> : IRepository<T> where T : BaseEntity
         return await _dbSet.FromSqlRaw(query).ToListAsync();
     }
 
-    public async Task<T?> FindById(int id)
+    public async Task<T?> FindById(int id, Expression<Func<T, object>> includeProperty = null)
     {
-        return await _dbSet.AsNoTracking().FirstOrDefaultAsync(p => p.Id == id);
+        IQueryable<T> query = _dbSet.AsNoTracking();
+
+        if (includeProperty != null)
+        {
+            query = query.Include(includeProperty);
+        }
+
+        return await query.FirstOrDefaultAsync(p => p.Id == id);
     }
 
     public async Task<T> Create(T obj)

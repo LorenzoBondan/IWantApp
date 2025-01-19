@@ -1,5 +1,5 @@
-﻿using IWantApp.Infra.Data;
-using IWantApp.Models;
+﻿using IWantApp.Models;
+using IWantApp.Models.Context;
 using IWantApp.Repositories.Base;
 
 public class CategoryRepository : GenericRepository<Category>, ICategoryRepository
