@@ -157,5 +157,5 @@ C:\projects\IWantApp\src\obj\Debug\net9.0\IWantApp.pdb
 C:\projects\IWantApp\src\obj\Debug\net9.0\IWantApp.genruntimeconfig.cache
 C:\projects\IWantApp\src\obj\Debug\net9.0\ref\IWantApp.dll
 C:\projects\IWantApp\src\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\projects\IWantApp\src\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\projects\IWantApp\src\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\projects\IWantApp\src\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

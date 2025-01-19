@@ -2,26 +2,30 @@
 using IWantApp.Models;
 using IWantApp.DTOs.Role;
 
-public class UserDtoToEntityAdapter
+public class UserPersistenceDtoToEntityAdapter
 {
-    public User ToEntity(UserDTO dto)
+    public User ToEntity(UserPersistenceDTO dto)
     {
         return new User
         {
             Id = dto.Id,
             UserName = dto.UserName,
+            PasswordHash = dto.Password,
             FullName = dto.FullName,
             Email = dto.Email,
             Address = dto.Address,
+            NormalizedEmail = dto.Email.ToUpper(),
+            NormalizedUserName = dto.UserName.ToUpper()
         };
     }
 
-    public UserDTO ToDto(User entity)
+    public UserPersistenceDTO ToDto(User entity)
     {
-        UserDTO user = new UserDTO()
+        UserPersistenceDTO user = new UserPersistenceDTO()
         {
             Id = entity.Id,
             UserName = entity.UserName,
+            Password = entity.PasswordHash,
             FullName = entity.FullName,
             Email = entity.Email,
             Address = entity.Address,

@@ -3,68 +3,52 @@
   "WorkspaceRootPath": "C:\\projects\\IWantApp\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\dtos\\user\\userpersistencedtotoentityadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:dtos\\user\\userpersistencedtotoentityadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\services\\role\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:services\\role\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\services\\category\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:services\\category\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\repositories\\role\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:repositories\\role\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\services\\category\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:services\\category\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\services\\role\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:services\\role\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\repositories\\role\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:repositories\\role\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\dtos\\role\\roledtotoentityadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:dtos\\role\\roledtotoentityadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\services\\user\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:services\\user\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\dtos\\user\\userdtotoentityadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:dtos\\user\\userdtotoentityadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\dtos\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:dtos\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\dtos\\user\\userpersistencedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:dtos\\user\\userpersistencedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\repositories\\user\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:repositories\\user\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\repositories\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:repositories\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\models\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:models\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\dtos\\category\\categorydtotoentityadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:dtos\\category\\categorydtotoentityadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|c:\\projects\\iwantapp\\src\\services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5690D655-79FD-4BE9-9D81-B7C42C6951D7}|IWantApp.csproj|solutionrelative:services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,212 +58,160 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RoleController.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Controllers\\RoleController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RoleController.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\Controllers\\RoleController.cs",
-              "RelativeToolTip": "Controllers\\RoleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:41:07.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Services\\Category\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "Services\\Category\\ICategoryService.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\Services\\Category\\ICategoryService.cs",
-              "RelativeToolTip": "Services\\Category\\ICategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Services\\User\\IUserService.cs",
+              "RelativeDocumentMoniker": "Services\\User\\IUserService.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Services\\User\\IUserService.cs",
+              "RelativeToolTip": "Services\\User\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:37:47.538Z",
+              "WhenOpened": "2025-01-19T18:56:29.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Services\\Category\\CategoryService.cs",
-              "RelativeDocumentMoniker": "Services\\Category\\CategoryService.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\Services\\Category\\CategoryService.cs",
-              "RelativeToolTip": "Services\\Category\\CategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Services\\User\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\User\\UserService.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Services\\User\\UserService.cs",
+              "RelativeToolTip": "Services\\User\\UserService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:36:18.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RoleService.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Services\\Role\\RoleService.cs",
-              "RelativeDocumentMoniker": "Services\\Role\\RoleService.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\Services\\Role\\RoleService.cs",
-              "RelativeToolTip": "Services\\Role\\RoleService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:34:58.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IRoleService.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Services\\Role\\IRoleService.cs",
-              "RelativeDocumentMoniker": "Services\\Role\\IRoleService.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\Services\\Role\\IRoleService.cs",
-              "RelativeToolTip": "Services\\Role\\IRoleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:34:18.418Z",
+              "WhenOpened": "2025-01-19T18:56:15.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAAAEAAAAA4AAAAAAAAAA==",
+              "Title": "UserPersistenceDtoToEntityAdapter.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\DTOs\\User\\UserPersistenceDtoToEntityAdapter.cs",
+              "RelativeDocumentMoniker": "DTOs\\User\\UserPersistenceDtoToEntityAdapter.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\DTOs\\User\\UserPersistenceDtoToEntityAdapter.cs",
+              "RelativeToolTip": "DTOs\\User\\UserPersistenceDtoToEntityAdapter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:30:35.575Z",
+              "WhenOpened": "2025-01-19T18:55:24.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Repositories\\User\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\User\\UserRepository.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\Repositories\\User\\UserRepository.cs",
-              "RelativeToolTip": "Repositories\\User\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "UserPersistenceDTO.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\DTOs\\User\\UserPersistenceDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\User\\UserPersistenceDTO.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\DTOs\\User\\UserPersistenceDTO.cs",
+              "RelativeToolTip": "DTOs\\User\\UserPersistenceDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:29:25.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Repositories\\User\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\User\\IUserRepository.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\Repositories\\User\\IUserRepository.cs",
-              "RelativeToolTip": "Repositories\\User\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:28:36.158Z",
+              "WhenOpened": "2025-01-19T18:54:34.267Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RoleRepository.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Repositories\\Role\\RoleRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Role\\RoleRepository.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\Repositories\\Role\\RoleRepository.cs",
-              "RelativeToolTip": "Repositories\\Role\\RoleRepository.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowA0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:26:04.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IRoleRepository.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Repositories\\Role\\IRoleRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Role\\IRoleRepository.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\Repositories\\Role\\IRoleRepository.cs",
-              "RelativeToolTip": "Repositories\\Role\\IRoleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:25:05.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "UserDtoToEntityAdapter.cs",
               "DocumentMoniker": "C:\\projects\\IWantApp\\src\\DTOs\\User\\UserDtoToEntityAdapter.cs",
               "RelativeDocumentMoniker": "DTOs\\User\\UserDtoToEntityAdapter.cs",
               "ToolTip": "C:\\projects\\IWantApp\\src\\DTOs\\User\\UserDtoToEntityAdapter.cs",
               "RelativeToolTip": "DTOs\\User\\UserDtoToEntityAdapter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:14:11.517Z",
+              "WhenOpened": "2025-01-19T18:53:03.532Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RoleDtoToEntityAdapter.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\DTOs\\Role\\RoleDtoToEntityAdapter.cs",
-              "RelativeDocumentMoniker": "DTOs\\Role\\RoleDtoToEntityAdapter.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\DTOs\\Role\\RoleDtoToEntityAdapter.cs",
-              "RelativeToolTip": "DTOs\\Role\\RoleDtoToEntityAdapter.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAASwBEAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\DTOs\\User\\UserDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\User\\UserDTO.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\DTOs\\User\\UserDTO.cs",
+              "RelativeToolTip": "DTOs\\User\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:12:13.529Z",
+              "WhenOpened": "2025-01-19T18:52:52.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CategoryDtoToEntityAdapter.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\DTOs\\Category\\CategoryDtoToEntityAdapter.cs",
-              "RelativeDocumentMoniker": "DTOs\\Category\\CategoryDtoToEntityAdapter.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\DTOs\\Category\\CategoryDtoToEntityAdapter.cs",
-              "RelativeToolTip": "DTOs\\Category\\CategoryDtoToEntityAdapter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAhwCUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:11:38.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Models\\Context\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\Context\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\projects\\IWantApp\\src\\Models\\Context\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Models\\Context\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:01:09.172Z",
+              "WhenOpened": "2025-01-19T18:44:44.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Models\\UserRole.cs",
+              "RelativeDocumentMoniker": "Models\\UserRole.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Models\\UserRole.cs",
+              "RelativeToolTip": "Models\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T18:43:41.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Models\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Models\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Models\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T18:42:17.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\projects\\IWantApp\\src\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:00:58Z",
+              "WhenOpened": "2025-01-19T18:40:54.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Repositories\\User\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\User\\UserRepository.cs",
+              "ToolTip": "C:\\projects\\IWantApp\\src\\Repositories\\User\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\User\\UserRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T18:38:16.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\projects\\IWantApp\\src\\Services\\Auth\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\Auth\\AuthService.cs",
               "ToolTip": "C:\\projects\\IWantApp\\src\\Services\\Auth\\AuthService.cs",
               "RelativeToolTip": "Services\\Auth\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-19T16:52:02.656Z",
               "EditorCaption": ""

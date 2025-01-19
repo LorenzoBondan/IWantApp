@@ -1,5 +1,6 @@
 ﻿using IWantApp.Models;
 using IWantApp.Models.Context;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 public class UserRepository : IUserRepository
@@ -23,7 +24,21 @@ public class UserRepository : IUserRepository
 
     public User GetByUsername(string username)
     {
-        return _context.Users.Where(u => u.UserName == username).FirstOrDefault();
+        var user = _context.Users
+        .Where(u => u.UserName == username)
+        .FirstOrDefault();
+
+        if (user != null)
+        {
+            var roles = _context.UserRoles
+                .Where(ur => ur.UserId == user.Id)
+                .Select(ur => ur.RoleId)
+                .ToList();
+
+            user.UserRoles = roles.Select(roleId => new IdentityUserRole<int> { RoleId = roleId }).ToList();
+        }
+
+        return user;
     }
 
     public async Task Create(User obj)

@@ -219,7 +219,7 @@
   },
   {
     "ContainingType": "IWantApp.Controllers.RoleController",
-    "Method": "CreateRole",
+    "Method": "Create",
     "RelativePath": "api/Role",
     "HttpMethod": "POST",
     "IsController": true,
@@ -235,7 +235,7 @@
   },
   {
     "ContainingType": "IWantApp.Controllers.RoleController",
-    "Method": "UpdateRole",
+    "Method": "Update",
     "RelativePath": "api/Role",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -251,7 +251,7 @@
   },
   {
     "ContainingType": "IWantApp.Controllers.RoleController",
-    "Method": "GetRoleById",
+    "Method": "GetById",
     "RelativePath": "api/Role/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -267,8 +267,82 @@
   },
   {
     "ContainingType": "IWantApp.Controllers.RoleController",
-    "Method": "DeleteRole",
+    "Method": "Delete",
     "RelativePath": "api/Role/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IWantApp.Controllers.UserController",
+    "Method": "GetAll",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IWantApp.Controllers.UserController",
+    "Method": "Create",
+    "RelativePath": "api/User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "IWantApp.DTOs.User.UserPersistenceDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IWantApp.Controllers.UserController",
+    "Method": "Update",
+    "RelativePath": "api/User",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "IWantApp.DTOs.User.UserPersistenceDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IWantApp.Controllers.UserController",
+    "Method": "GetById",
+    "RelativePath": "api/User/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IWantApp.Controllers.UserController",
+    "Method": "Delete",
+    "RelativePath": "api/User/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

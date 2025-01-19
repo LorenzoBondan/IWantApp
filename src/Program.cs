@@ -6,6 +6,7 @@ using IWantApp.Models;
 using IWantApp.Models.Context;
 using IWantApp.Services.Auth;
 using IWantApp.Services.Role;
+using IWantApp.Services.User;
 using IWantApp.Utils;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -47,6 +48,14 @@ builder.Services.AddAuthentication(options =>
 // @Transactional
 builder.Services.AddScoped<TransactionalAttribute>();
 
+builder.Services.AddScoped<CustomUserUtil>();
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<UserDtoToEntityAdapter>();
+
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IUserService, UserService>();
+
 // Serviços e Repositórios
 builder.Services.AddScoped<BaseConverter<Category, CategoryDTO>, CategoryDtoToEntityAdapter>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
@@ -59,20 +68,17 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<CategoryDtoToEntityAdapter>();
 builder.Services.AddScoped<ProductDtoToEntityAdapter>();
 builder.Services.AddScoped<RoleDtoToEntityAdapter>();
-builder.Services.AddScoped<UserDtoToEntityAdapter>();
 
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IRoleService, RoleService>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-
-builder.Services.AddScoped<CustomUserUtil>();
-builder.Services.AddScoped<IAuthService, AuthService>();
 
 // Serviços para APIs
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 // Adicionando filtros globais para exceções
+builder.Services.AddScoped<ApiExceptionFilter>();
 builder.Services.AddControllers(options =>
 {
     options.Filters.Add<ApiExceptionFilter>();
