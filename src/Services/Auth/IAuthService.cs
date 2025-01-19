@@ -1,7 +1,9 @@
-﻿namespace IWantApp.Services.Auth;
+﻿using IWantApp.DTOs.User;
+
+namespace IWantApp.Services.Auth;
 
 public interface IAuthService
 {
-    string GetLoggedUsername();
-    bool isAdmin();
+    UserDTO Authenticated();
+    void ValidateSelfOrAdmin(int userId);
 }

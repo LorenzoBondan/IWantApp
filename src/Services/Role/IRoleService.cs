@@ -6,7 +6,7 @@ public interface IRoleService
 {
     Task<List<RoleDTO>> GetAll();
     Task<RoleDTO> GetById(int id);
-    Task Create(RoleDTO obj);
-    Task Update(RoleDTO obj);
+    Task Create(RoleDTO dto);
+    Task Update(RoleDTO dto);
     Task Delete(int id);
 }

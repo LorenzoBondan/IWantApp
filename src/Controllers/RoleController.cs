@@ -26,7 +26,7 @@ public class RoleController : ControllerBase
 
     [Authorize(Roles = "Admin")]
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetRoleById(int id)
+    public async Task<IActionResult> GetById(int id)
     {
         var obj = await _service.GetById(id);
         return Ok(obj);
@@ -34,15 +34,15 @@ public class RoleController : ControllerBase
 
     [Authorize(Roles = "Admin")]
     [HttpPost]
-    public async Task<IActionResult> CreateRole([FromBody] RoleDTO dto)
+    public async Task<IActionResult> Create([FromBody] RoleDTO dto)
     {
         await _service.Create(dto);
-        return CreatedAtAction(nameof(GetRoleById), new { id = dto.Id }, dto);
+        return CreatedAtAction(nameof(GetById), new { id = dto.Id }, dto);
     }
 
     [Authorize(Roles = "Admin")]
     [HttpPut]
-    public async Task<IActionResult> UpdateRole([FromBody] RoleDTO dto)
+    public async Task<IActionResult> Update([FromBody] RoleDTO dto)
     {
         await _service.Update(dto);
         return Ok(dto);
@@ -50,7 +50,7 @@ public class RoleController : ControllerBase
 
     [Authorize(Roles = "Admin")]
     [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteRole(int id)
+    public async Task<IActionResult> Delete(int id)
     {
         await _service.Delete(id);
         return NoContent(); 

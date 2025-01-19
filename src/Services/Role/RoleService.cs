@@ -5,45 +5,45 @@ namespace IWantApp.Services.Role;
 
 public class RoleService : IRoleService
 {
-    private readonly IRoleRepository _roleRepository;
-    private readonly RoleDtoToEntityAdapter _roleDtoToEntityAdapter;
+    private readonly IRoleRepository _repository;
+    private readonly RoleDtoToEntityAdapter _adapter;
 
     public RoleService(IRoleRepository roleRepository, RoleDtoToEntityAdapter roleDtoToEntityAdapter)
     {
-        _roleRepository = roleRepository;
-        _roleDtoToEntityAdapter = roleDtoToEntityAdapter;
+        _repository = roleRepository;
+        _adapter = roleDtoToEntityAdapter;
     }
 
     public async Task<List<RoleDTO>> GetAll()
     {
-        var roles = await _roleRepository.GetAll();
-        return roles.Select(r => _roleDtoToEntityAdapter.ToDto(r)).ToList();
+        var list = await _repository.GetAll();
+        return list.Select(r => _adapter.ToDto(r)).ToList();
     }
 
     public async Task<RoleDTO> GetById(int id)
     {
-        var role = await _roleRepository.GetById(id);
-        if (role == null)
+        var obj = await _repository.GetById(id);
+        if (obj == null)
         {
             throw new ResourceNotFoundException("Role não encontrada com id: " + id);
         }
-        return _roleDtoToEntityAdapter.ToDto(role);
+        return _adapter.ToDto(obj);
     }
 
-    public async Task Create(RoleDTO obj)
+    public async Task Create(RoleDTO dto)
     {
-        var role = _roleDtoToEntityAdapter.ToEntity(obj);
-        await _roleRepository.Create(role);
+        var entity = _adapter.ToEntity(dto);
+        await _repository.Create(entity);
     }
 
-    public async Task Update(RoleDTO obj)
+    public async Task Update(RoleDTO dto)
     {
-        var role = _roleDtoToEntityAdapter.ToEntity(obj);
-        await _roleRepository.Update(role);
+        var entity = _adapter.ToEntity(dto);
+        await _repository.Update(entity);
     }
 
     public async Task Delete(int id)
     {
-        await _roleRepository.Delete(id);
+        await _repository.Delete(id);
     }
 }
