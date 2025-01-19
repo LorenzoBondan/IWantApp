@@ -4,16 +4,49 @@ using IWantApp.DTOs.Category;
 using IWantApp.DTOs.Product;
 using IWantApp.Models;
 using IWantApp.Models.Context;
-using Microsoft.EntityFrameworkCore;
+using IWantApp.Services.Auth;
+using IWantApp.Utils;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Configuração do banco de dados SQL Server
 builder.Services.AddSqlServer<ApplicationDbContext>(builder.Configuration["Database:SqlServer"]);
+
+builder.Services.AddIdentity<User, Role>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+
+// Configuração do JWT
+var jwtKey = builder.Configuration["Jwt:Key"];
+var jwtIssuer = builder.Configuration["Jwt:Issuer"];
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = jwtIssuer,
+        ValidAudience = jwtIssuer,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
+    };
+});
 
 // @Transactional
 builder.Services.AddScoped<TransactionalAttribute>();
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration["Database:SqlServer"]));
 
+// Serviços e Repositórios
 builder.Services.AddScoped<BaseConverter<Category, CategoryDTO>, CategoryDtoToEntityAdapter>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
@@ -25,9 +58,14 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<CategoryDtoToEntityAdapter>();
 builder.Services.AddScoped<ProductDtoToEntityAdapter>();
 
+builder.Services.AddScoped<CustomUserUtil>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+
+// Serviços para APIs
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Adicionando filtros globais para exceções
 builder.Services.AddControllers(options =>
 {
     options.Filters.Add<ApiExceptionFilter>();
@@ -35,6 +73,7 @@ builder.Services.AddControllers(options =>
 
 var app = builder.Build();
 
+// Configuração de desenvolvimento (Swagger)
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -43,6 +82,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Middleware de autenticação e autorização
+app.UseAuthentication(); // Habilita autenticação
+app.UseAuthorization(); // Habilita autorização
+
+// Mapeia os controladores
 app.MapControllers();
 
+// Roda a aplicação
 app.Run();

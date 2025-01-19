@@ -1,5 +1,6 @@
 ﻿using IWantApp.Config;
 using IWantApp.DTOs.Product;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IWantApp.Controllers;
@@ -15,12 +16,14 @@ public class ProductController : ControllerBase
         this.service = service;
     }
 
+    [Authorize(Roles = "Admin, Client")]
     [HttpGet]
     public IActionResult GetAll()
     {
         return Ok(service.FindAllWithCategory());
     }
 
+    [Authorize(Roles = "Admin, Client")]
     [HttpGet("{id}")]
     public async Task<ActionResult<ProductDTO>> GetById([FromRoute] int id)
     {
@@ -28,6 +31,7 @@ public class ProductController : ControllerBase
         return dto != null ? Ok(dto) : NotFound();
     }
 
+    [Authorize(Roles = "Admin")]
     [ServiceFilter(typeof(TransactionalAttribute))]
     [HttpPost]
     public async Task<ActionResult<ProductDTO>> Create([FromBody] ProductDTO dto)
@@ -36,6 +40,7 @@ public class ProductController : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = createdObj.Id }, createdObj);
     }
 
+    [Authorize(Roles = "Admin")]
     [ServiceFilter(typeof(TransactionalAttribute))]
     [HttpPut]
     public async Task<ActionResult<ProductDTO>> Update([FromBody] ProductDTO dto)
@@ -44,6 +49,7 @@ public class ProductController : ControllerBase
         return updatedObj != null ? Ok(updatedObj) : NotFound();
     }
 
+    [Authorize(Roles = "Admin")]
     [ServiceFilter(typeof(TransactionalAttribute))]
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete([FromRoute] int id)
