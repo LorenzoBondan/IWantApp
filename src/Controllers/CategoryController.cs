@@ -24,6 +24,14 @@ public class CategoryController : ControllerBase
     }
 
     [Authorize(Roles = "Admin, Client")]
+    [HttpGet("paged")]
+    public async Task<IActionResult> GetAllPaged([FromQuery] int page = 0, [FromQuery] int size = 10, [FromQuery] string? sortedBy = null)
+    {
+        var pagedResponse = await service.GetAllPaged(page, size, sortedBy);
+        return Ok(pagedResponse);
+    }
+
+    [Authorize(Roles = "Admin, Client")]
     [HttpGet("{id}")]
     public async Task<ActionResult<CategoryDTO>> GetById([FromRoute] int id)
     {

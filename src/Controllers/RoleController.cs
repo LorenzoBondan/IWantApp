@@ -25,8 +25,16 @@ public class RoleController : ControllerBase
     }
 
     [Authorize(Roles = "Admin")]
+    [HttpGet("paged")]
+    public async Task<IActionResult> GetAllPaged([FromQuery] int page = 0, [FromQuery] int size = 10, [FromQuery] string? sortedBy = null)
+    {
+        var pagedResponse = await _service.GetAllPaged(page, size, sortedBy);
+        return Ok(pagedResponse);
+    }
+
+    [Authorize(Roles = "Admin")]
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetById(int id)
+    public async Task<IActionResult> GetById([FromRoute] int id)
     {
         var obj = await _service.GetById(id);
         return Ok(obj);
@@ -50,7 +58,7 @@ public class RoleController : ControllerBase
 
     [Authorize(Roles = "Admin")]
     [HttpDelete("{id}")]
-    public async Task<IActionResult> Delete(int id)
+    public async Task<IActionResult> Delete([FromRoute] int id)
     {
         await _service.Delete(id);
         return NoContent(); 

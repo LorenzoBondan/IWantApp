@@ -104,6 +104,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "IWantApp.Controllers.CategoryController",
+    "Method": "GetAllPaged",
+    "RelativePath": "api/Category/paged",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "IWantApp.Controllers.ProductController",
     "Method": "GetAll",
     "RelativePath": "api/Product",
@@ -208,6 +234,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "IWantApp.Controllers.ProductController",
+    "Method": "GetAllPaged",
+    "RelativePath": "api/Product/paged",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "IWantApp.Controllers.RoleController",
     "Method": "GetAll",
     "RelativePath": "api/Role",
@@ -282,6 +334,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "IWantApp.Controllers.RoleController",
+    "Method": "GetAllPaged",
+    "RelativePath": "api/Role/paged",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "IWantApp.Controllers.UserController",
     "Method": "GetAll",
     "RelativePath": "api/User",
@@ -351,6 +429,32 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IWantApp.Controllers.UserController",
+    "Method": "GetAllPaged",
+    "RelativePath": "api/User/paged",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortedBy",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

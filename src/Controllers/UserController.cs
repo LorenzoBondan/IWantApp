@@ -24,6 +24,14 @@ public class UserController : ControllerBase
         return Ok(list);
     }
 
+    [Authorize(Roles = "Admin")]
+    [HttpGet("paged")]
+    public async Task<IActionResult> GetAllPaged([FromQuery] int page = 0, [FromQuery] int size = 10, [FromQuery] string? sortedBy = null)
+    {
+        var pagedResponse = await _service.GetAllPaged(page, size, sortedBy);
+        return Ok(pagedResponse);
+    }
+
     [Authorize(Roles = "Admin, Client")]
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)

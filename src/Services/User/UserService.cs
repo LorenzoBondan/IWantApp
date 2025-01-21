@@ -3,6 +3,7 @@ using IWantApp.Models;
 using IWantApp.Services.Auth;
 using IWantApp.Services.Exceptions;
 using IWantApp.Services.User;
+using IWantApp.Utils;
 using Microsoft.AspNetCore.Identity;
 
 public class UserService : IUserService
@@ -24,6 +25,27 @@ public class UserService : IUserService
     {
         var list = await _repository.GetAll();
         return list.Select(r => _adapter.ToDto(r)).ToList();
+    }
+
+    public async Task<PageableResponse<UserDTO>> GetAllPaged(int page, int size, string? sortedBy = null)
+    {
+        var pagedResponse = await _repository.GetAllPaged(page, size, sortedBy);
+
+        var contentDto = pagedResponse.Content
+            .Select(r => _adapter.ToDto(r))
+            .ToList();
+
+        return new PageableResponse<UserDTO>
+        {
+            NumberOfElements = pagedResponse.NumberOfElements,
+            Page = pagedResponse.Page,
+            TotalPages = pagedResponse.TotalPages,
+            Size = pagedResponse.Size,
+            First = pagedResponse.First,
+            Last = pagedResponse.Last,
+            SortedBy = pagedResponse.SortedBy,
+            Content = contentDto
+        };
     }
 
     public async Task<UserDTO> GetById(int id)

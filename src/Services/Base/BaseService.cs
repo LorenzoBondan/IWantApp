@@ -4,6 +4,7 @@ using IWantApp.DTOs.Base;
 using IWantApp.Models.Base;
 using IWantApp.Repositories.Base;
 using IWantApp.Services.Exceptions;
+using IWantApp.Utils;
 using System.Linq.Expressions;
 
 public class BaseService<T, Dto> : IBaseService<T, Dto> where T : BaseEntity where Dto : BaseDTO
@@ -27,6 +28,33 @@ public class BaseService<T, Dto> : IBaseService<T, Dto> where T : BaseEntity whe
     {
         var entities = await _repository.FindWithPagedSearch(query);
         return entities.Select(_converter.ToDto).ToList();
+    }
+
+    public async Task<PageableResponse<Dto>> GetAllPaged(
+    int page,
+    int size,
+    string? sortedBy = null,
+    Expression<Func<T, bool>>? filter = null,
+    params Expression<Func<T, object>>[] includeProperties)
+    {
+        // Chama o método genérico de paginação do repositório
+        var pagedResult = await _repository.GetAllPaged(page, size, sortedBy, filter, includeProperties);
+
+        // Converte a lista de entidades para DTOs
+        var content = pagedResult.Content.Select(_converter.ToDto).ToList();
+
+        // Retorna o resultado paginado
+        return new PageableResponse<Dto>
+        {
+            NumberOfElements = pagedResult.NumberOfElements,
+            Page = pagedResult.Page,
+            TotalPages = pagedResult.TotalPages,
+            Size = pagedResult.Size,
+            First = pagedResult.First,
+            Last = pagedResult.Last,
+            SortedBy = pagedResult.SortedBy,
+            Content = content
+        };
     }
 
     public async Task<Dto?> FindById(int id, Expression<Func<T, object>> includeProperty)

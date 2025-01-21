@@ -1,6 +1,7 @@
 ﻿using IWantApp.Models.Base;
 using IWantApp.Models.Context;
 using IWantApp.Services.Exceptions;
+using IWantApp.Utils;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -33,6 +34,62 @@ public class GenericRepository<T> : IRepository<T> where T : BaseEntity
     public async Task<List<T>> FindWithPagedSearch(string query)
     {
         return await _dbSet.FromSqlRaw(query).ToListAsync();
+    }
+
+    public async Task<PageableResponse<T>> GetAllPaged(
+    int page,
+    int size,
+    string? sortedBy = null,
+    Expression<Func<T, bool>>? filter = null,
+    params Expression<Func<T, object>>[] includeProperties)
+    {
+        IQueryable<T> query = _dbSet.AsNoTracking();
+
+        // Aplicar filtro, se houver
+        if (filter != null)
+        {
+            query = query.Where(filter);
+        }
+
+        // Aplicar Includes
+        foreach (var includeProperty in includeProperties)
+        {
+            query = query.Include(includeProperty);
+        }
+
+        // Ordenação dinâmica
+        if (!string.IsNullOrEmpty(sortedBy))
+        {
+            var sortParts = sortedBy.Split(';');
+            var sortColumn = sortParts[0];
+            var ascending = sortParts.Length < 2 || sortParts[1].ToLower() == "a";
+
+            query = ascending ? query.OrderByDynamic(sortColumn) : query.OrderByDescendingDynamic(sortColumn);
+        }
+
+        // Total de itens
+        var totalCount = await query.CountAsync();
+
+        // Paginação
+        var content = await query
+            .Skip(page * size)
+            .Take(size)
+            .ToListAsync();
+
+        // Total de páginas
+        var totalPages = (int)Math.Ceiling((double)totalCount / size);
+
+        return new PageableResponse<T>
+        {
+            NumberOfElements = content.Count,
+            Page = page,
+            TotalPages = totalPages,
+            Size = size,
+            First = page == 0,
+            Last = page >= totalPages - 1,
+            SortedBy = sortedBy,
+            Content = content
+        };
     }
 
     public async Task<T?> FindById(int id, Expression<Func<T, object>> includeProperty = null)
